@@ -1,7 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import animate from 'tailwindcss-animate'; // Sử dụng import thay vì require
-
-export default {
+module.exports = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -75,5 +73,5 @@ export default {
       },
     },
   },
-  plugins: [animate],  // Sử dụng biến 'animate' thay vì require
+  plugins: [require("tailwindcss-animate")],
 }
