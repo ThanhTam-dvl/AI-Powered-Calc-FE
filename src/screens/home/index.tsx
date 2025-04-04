@@ -348,7 +348,7 @@ useEffect(() => {
         try {
             const response = await axios({
                 method: 'post',
-                url: `${import.meta.env.VITE_API_URL}/calculate`,
+                url: `https://ai-powered-calc-be-zz4u.onrender.com/calculate`,
                 data: {
                     image: canvas.toDataURL('image/png'),
                     dict_of_vars: dictOfVars
